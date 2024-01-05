@@ -1,0 +1,256 @@
+:root{
+  --color-title: #3f3f3f;
+  --font-family: 'Source Sans 3', sans-serif;
+  --blue-element: rgb(44, 156, 221);
+}
+
+@mixin title{
+  color: var(black);
+  font-family: var(--font-family);
+  font-size: 32px;
+  text-align: center;
+}
+
+
+/* our mentors */
+.line_m{
+  border: none; /* видаляємо границю */
+  border-bottom: 1px solid rgb(226, 225, 225); /* встановлюємо синю лінію замість границі */
+  display: block; /* зробимо елемент блочним для того, щоб зайняти весь рядок */
+  margin: 0; /* забираємо можливі внутрішні відступи, щоб лінія була на повну ширину */
+  padding: 0; /* забираємо можливі внутрішні відступи */
+}
+.content_mentors {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+    .title_mentors{
+      @include title;
+    }
+    .mentor_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .foto{
+      margin-left: 0px;
+      max-width: 500px;
+      position: relative;
+    }
+    .text {
+      margin-top: -350px;
+      flex: 1; /* Take up the entire available width of free space */
+      margin-left: 400px; 
+    }  
+    .name{
+      font-family: var(--font-family);
+      font-size: 20px;
+      color: var(--blue-element);
+      font-weight: bold;
+      margin-top: -10px;
+    }
+    .line {
+      width: 100%; 
+      height: 1px; 
+      background-color: #ebebeb; 
+    }
+    .mentors{
+      font-family: var(--font-family);
+      font-size: 16px;
+      color: #797979;
+    }
+  /*dot */
+  .slick-dot {
+    size: 20px;
+    color: #000; 
+  }
+
+
+  @media screen and (min-width: 600px) and (max-width: 700px) {
+/* our mentors */
+.content_mentors {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+    .title_mentors{
+      @include title;
+    }
+    .mentor_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .foto{
+      margin-left: 0px;
+      width: 250px;
+      position: relative;
+    }
+    .text {
+      font-family: var(--font-family);
+      margin-top: -250px;
+      flex: 1; /* Take up the entire available width of free space */
+      margin-left: 300px; 
+    }  
+    .name{
+      font-size: 20px;
+      color: var(--blue-element);
+      font-weight: bold;
+      margin-top: -10px;
+    }
+    .mentors{
+      font-size: 16px;
+      color: #797979;
+    }
+  /*dot */
+  .slick-dot {
+    size: 20px;
+    color: #000; 
+  }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 599px) {
+    /* our mentors */
+    .content_mentors {
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+        .title_mentors{
+          @include title;
+        }
+        .mentor_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .foto{
+          margin-left: 0px;
+          width: 200px;
+          position: relative;
+        }
+        .text {
+          margin-top: -200px;
+          flex: 1; /* Take up the entire available width of free space */
+          margin-left: 250px; 
+        }  
+        .name{
+          font-size: 20px;
+          color: var(--blue-element);
+          font-weight: bold;
+          margin-top: -10px;
+        }
+        .line {
+          width: 100%; 
+          height: 1px; 
+          background-color: #ebebeb; 
+        }
+        .mentors{
+          font-size: 14px;
+          color: #797979;
+        }
+      /*dot */
+      .slick-dot {
+        size: 20px;
+        color: #000; 
+      }
+      }
+
+      @media screen and (min-width: 379px) and (max-width: 479px) {
+      .content_mentors {
+          max-width: 370px;
+          margin: 0 auto;
+          padding: 0 15px;
+      }
+      .title_mentors {
+        @include title;
+      }
+      .mentor_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start; /* Align items to the start (top) */
+      }
+      .foto {
+          margin-left: 20%;
+          width: 200px;
+          position: relative;
+      }
+      .text {
+          margin-top: 20px; /* Add some space between image and text */
+          flex: 1;
+          margin-left: 15px; /* Adjust the left margin as needed */
+      }
+      .name {
+          font-size: 18px;
+          margin-left: 110px;
+      }
+      .line {
+          width: 100%;
+          height: 1px;
+          background-color: #ebebeb;
+      }
+      .mentors {
+          font-size: 16px;
+          color: #797979;
+      }
+      /* Dot */
+      .slick-dot {
+          size: 20px;
+          color: #000;
+      }
+      }
+
+
+      @media screen and (min-width: 320px) and (max-width: 378px) {
+        .content_mentors {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .title_mentors {
+            @include title;
+            font-size: 28px;
+        }
+        .mentor_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the start (top) */
+        }
+        .foto {
+            margin-left: 15%;
+            width: 200px;
+            position: relative;
+        }
+        .text {
+            margin-top: 20px; /* Add some space between image and text */
+            flex: 1;
+            margin-left: 15px; /* Adjust the left margin as needed */
+        }
+        .name {
+          font-size: 18px;
+          margin-top: -10px;
+          text-align: center;
+      }
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #ebebeb;
+        }
+        .mentors {
+            font-size: 14px;
+            color: #797979;
+            margin-left: 10px;
+        }
+        /* Dot */
+        .slick-dot {
+            size: 20px;
+            color: #000;
+        }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 378px) {
+          .name {
+            font-size: 18px;
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+        }
