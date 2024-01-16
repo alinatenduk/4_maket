@@ -1,0 +1,293 @@
+:root{
+    --color-title: #3f3f3f;
+    --font-family: 'Source Sans 3', sans-serif;
+    --blue-element: rgb(44, 156, 221);
+  }
+  
+  
+  .blok_CTA_2 {
+      margin-top: -10px;
+      height: 250px;
+      margin-left: -10px;
+      margin-right: -10px;
+      background-color: var(--blue-element);
+      display: flex;
+      font-family: var(--font-family);
+      color: #ffffff;
+    }
+    .content_CTA {
+      display: flex; /* Make the container a flex container */
+      justify-content: space-between; /* Arrange children with space around them */
+      align-items: center; /* Center items vertically */
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .horizontal_blok_CTA {
+      max-width: 200px;
+      text-align: center;
+      margin-left: 80px;
+    }
+    .img_c {
+      width: 50px;
+    }
+    .text_CTA_litle {
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    
+    
+    
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+      .blok_CTA_2 {
+        height: 250px;
+        display: flex;
+      }
+      .content_CTA {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Arrange children with space around them */
+        align-items: center; /* Center items vertically */
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .horizontal_blok_CTA {
+        max-width: 150px;
+        text-align: center;
+        margin-left: 40px;
+      }
+      .img_c {
+        width: 50px;
+      }
+      .text_CTA{
+        font-size: 16px;
+      }
+      .text_CTA_litle {
+        white-space: nowrap; 
+        font-size: 12px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 550px) and (max-width: 599px) {
+      .blok_CTA_2 {
+        height: 400px;
+        display: flex;
+      }
+      .content_CTA {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Arrange children with space around them */
+        align-items: center; /* Center items vertically */
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-left: -30px;
+      }
+      .horizontal_blok_CTA {
+        max-width: 150px;
+        text-align: center;
+        margin-left: 160px;
+        margin-top: -210px;
+      }
+      .bottom_cta{
+        margin-top: 190px;
+        margin-left: -350px;
+      }
+      .bottom_cta_2{
+        margin-top: 190px;
+        margin-left: 120px;
+      }
+      .img_c {
+        width: 50px;
+      }
+      .text_CTA{
+        font-size: 16px;
+      }
+      .text_CTA_litle {
+        white-space: nowrap; 
+        font-size: 12px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    
+    
+    
+    
+    @media screen and (min-width: 500px) and (max-width: 549px) {
+      .blok_CTA_2 {
+        height: 350px;
+        display: flex;
+      }
+      .content_CTA {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Arrange children with space around them */
+        align-items: center; /* Center items vertically */
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-left: -30px;
+      }
+      .horizontal_blok_CTA {
+        max-width: 150px;
+        text-align: center;
+        margin-left: 150px;
+        margin-top: -200px;
+      }
+      .bottom_cta{
+        margin-top: 190px;
+        margin-left: -340px;
+      }
+      .bottom_cta_2{
+        margin-top: 190px;
+        margin-left: 130px;
+      }
+      .img_c {
+        width: 40px;
+      }
+      .text_CTA{
+        font-size: 16px;
+      }
+      .text_CTA_litle {
+        white-space: nowrap; 
+        font-size: 11px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    
+    @media screen and (min-width: 400px) and (max-width: 500px) {
+      .blok_CTA_2 {
+        height: 350px;
+        display: flex;
+      }
+      .content_CTA {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Arrange children with space around them */
+        align-items: center; /* Center items vertically */
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-left: -30px;
+      }
+      .horizontal_blok_CTA {
+        max-width: 150px;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: -200px;
+      }
+      .bottom_cta{
+        margin-top: 190px;
+        margin-left: -280px;
+      }
+      .bottom_cta_2{
+        margin-top: 190px;
+        margin-left: 70px;
+      }
+      .img_c {
+        width: 40px;
+      }
+      .text_CTA{
+        font-size: 16px;
+      }
+      .text_CTA_litle {
+        white-space: nowrap; 
+        font-size: 11px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 320px) and (max-width: 400px) {
+      .blok_CTA_2 {
+        height: 350px;
+        display: flex;
+      }
+      .content_CTA {
+        display: flex; /* Make the container a flex container */
+        justify-content: space-between; /* Arrange children with space around them */
+        align-items: center; /* Center items vertically */
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-left: -30px;
+      }
+      .horizontal_blok_CTA {
+        max-width: 150px;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: -180px;
+      }
+      .bottom_cta{
+        margin-top: 190px;
+        margin-left: -280px;
+      }
+      .bottom_cta_2{
+        margin-top: 190px;
+        margin-left: 60px;
+      }
+      .img_c {
+        width: 40px;
+      }
+      .text_CTA{
+        font-size: 16px;
+      }
+      .text_CTA_litle {
+        white-space: nowrap; 
+        font-size: 11px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    
+    
+    @media screen and (min-width: 320px) and (max-width: 365px) {
+      .horizontal_blok_CTA {
+        margin-left: 70px;
+      }
+      .bottom_cta {
+        margin-left: -250px;
+        -webkit-margin-left: 100px;
+      }
+      .bottom_cta_2 {
+        margin-left: 35px;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
