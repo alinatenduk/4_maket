@@ -32,21 +32,31 @@
 .paragraph{
   @include sdandart-text;
 }
-.slider-nav {
-  text-align: center;
+.dots-container {
+  display: flex;
+}
+.new{
   .dot {
-      display: inline-block;
-      height: 10px;
-      width: 10px;
-      margin: 0 5px;
-      background-color: #bbb;
-      border-radius: 50%;
-      cursor: pointer;
-      &.active {
-          background-color: #717171;
-      }
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #acacac;
+    border-radius: 50%;
+    cursor: pointer;
   }
 }
+
+/* Додаткові стилі для деактивації крапок при розширенні екрану більше 850 пікселів */
+@media screen and (min-width: 960px) {
+  .new{
+    .dot {
+      pointer-events: none;
+      display: none;
+    }
+  }
+}
+
+
 @media screen and (max-width: 960px) {
   .horizontal_container:nth-child(3) {
     display: none;
