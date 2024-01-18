@@ -14,10 +14,7 @@ $(document).ready(function(){
     arrows: false, // Disables the "Previous" and "Next" buttons
   });
 });
-document.getElementById('sendMessageBtn').addEventListener('click', function() {
-  var message = prompt('Введіть ваше повідомлення:');
-  console.log('Ви відправили повідомлення: ' + message);
-});
+
 
 //validation phone
 document.addEventListener("DOMContentLoaded", function () {
@@ -61,41 +58,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//  slider "що кажуть наші студенти"
 $(document).ready(function () {
   // Function to show/hide blocks based on screen width
   function updateSlider() {
     var screenWidth = $(window).width();
     var numPostsPerSlide = 1; // Default value for screens wider than 850px
-
     if (screenWidth < 600) {
       numPostsPerSlide = 1;
     } else if (screenWidth < 960) {
       numPostsPerSlide = 2;
     }
-
     if ($('.content_blok_b .horizontal_container').length <= numPostsPerSlide) {
       // If there are three or fewer posts, hide the slider
       $('.horizontal_container').hide();
@@ -115,15 +88,12 @@ $(document).ready(function () {
       }
     }
   }
-
   // Initial setup
   updateSlider();
-
   // Update slider when the window is resized
   $(window).resize(function () {
     updateSlider();
   });
-
   // Auto-change slides every 10 seconds
   setInterval(function () {
     $('.content_blok_b').find('.horizontal_container:visible').fadeOut(500, function () {
@@ -136,8 +106,6 @@ $(document).ready(function () {
     });
   }, 10000);
 });
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var containers = document.querySelectorAll(".content_blok_b .horizontal_container");
   var dots = document.querySelectorAll('.slider-nav .dot');
@@ -167,8 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   }
   });
-  
-  
   document.addEventListener("DOMContentLoaded", function () {
   var currentIndex = 0;
   showSlide(currentIndex); 
@@ -202,42 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   });
   
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Slider "що кажуть студенти наших курсів"
@@ -293,12 +223,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     setInterval(showNextSlide, 10000); // Change slide every 10 seconds
 });
-
-
-
-
-
-
-
-
-
