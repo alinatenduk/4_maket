@@ -64,7 +64,7 @@ $(document).ready(function () {
   function updateSlider() {
     var screenWidth = $(window).width();
     var numPostsPerSlide = 1; // Default value for screens wider than 850px
-    if (screenWidth < 600) {
+    if (screenWidth < 601) {
       numPostsPerSlide = 1;
     } else if (screenWidth < 960) {
       numPostsPerSlide = 2;
@@ -74,7 +74,7 @@ $(document).ready(function () {
       $('.horizontal_container').hide();
     } else {
       // If there are more than three posts, show the slider
-      if (screenWidth < 600) {
+      if (screenWidth < 601) {
         // For screens less than 600px wide, show one post per slide
         $('.horizontal_container').hide();
         $('.content_blok_b').find('.horizontal_container:first-child').show();
